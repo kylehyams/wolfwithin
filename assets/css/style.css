@@ -181,7 +181,7 @@ h3 {
     color: rgb(248, 213, 19);
     letter-spacing: 0.075em;
     text-transform: uppercase;
-    margin: 40px auto 0;
+    margin: 0;
 }
 
 a {
@@ -220,7 +220,7 @@ header {
         }
 
         header > div > hr {
-            width: 50px;
+            width: 40px;
             height: 1px;
             background-color: rgb(242, 240, 218);
             border: 0;
@@ -410,14 +410,13 @@ header {
                     text-decoration: none;
                     color: rgb(66, 65, 53);
                     background-color: rgb(248, 213, 19);
-                    border: solid 3px rgb(248, 213, 19);
                     margin: 20px 0 0 0;
-                    padding: 12px 37px;
+                    padding: 15px 40px;
                 }
 
                 .button:hover {
                     color: rgb(66, 65, 63);
-                    background-color: rgba(248, 213, 19, 0);
+                    background-color: rgb(250, 228, 101);
                 }
 
         #newsletter-right {
@@ -453,8 +452,8 @@ footer {
             background-color: rgb(242, 240, 218);
             border: 0;
             height: 1px;
-            width: 50px;
-            margin: 30px auto 0;
+            width: 40px;
+            margin: 30px auto 50px;
             padding: 0;
         }
 
