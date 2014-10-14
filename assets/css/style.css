@@ -1,0 +1,653 @@
+@charset "UTF-8";
+
+/*!
+Animate.css - http://daneden.me/animate
+Licensed under the MIT license - http://opensource.org/licenses/MIT
+
+Copyright (c) 2014 Daniel Eden
+*/
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    -ms-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+/* ICON FONTS */
+
+@font-face {
+    font-family: "wolfwithin";
+    src:url("../fonts/wolfwithin.eot");
+    src:url("../fonts/wolfwithin.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/wolfwithin.woff") format("woff"),
+    url("../fonts/wolfwithin.ttf") format("truetype"),
+    url("../fonts/wolfwithin.svg#wolfwithin") format("svg");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*[class*=icon-],*[class*=icon-]:before, *[class*=icon-]:after, .icon {               
+    font-family: 'wolfwithin';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1.375em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shirt:before {
+    content: "\e002";
+    font-size: 30px;
+    position: absolute;
+    left: -60px;
+    top: -2px;
+}
+
+.icon-ink:before {
+    content: "\e001";
+    font-size: 30px;
+    position: absolute;
+    left: -60px;
+    top: -1px;
+    
+}
+
+.icon-truck:before {
+    content: "\e003";
+    font-size: 35px;
+    position: absolute;
+    left: -60px;
+    top: -8px;
+}
+
+.icon-dribbble:before {content: "\e000";}
+.icon-twitter:before {content: "\e004";}
+.icon-vscogrid:before {content: "\e005";}
+
+/* MAIN STYLES */
+* {
+    -webkit-touch-callout:none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust:none;             /* prevent webkit from resizing text to fit */
+    -webkit-tap-highlight-color:rgba(0,0,0,0); /* prevent tap highlight color / shadow */
+    outline-width: 0;
+    outline: none;
+}
+
+body {
+    font-family: 'Anonymous Pro', "courier new", "times new roman", serif;
+    font-size: 1em;
+    font-weight: normal;
+    color: rgb(66, 65, 53);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: rgb(254, 249, 218);
+    background-image:url("../images/map_pattern.png");
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Oswald', "helvetica",  "arial", sans-serif;
+    font-size: 3.4375em;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.2em;
+    color: rgb(248, 213, 19);
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
+    margin: 50px auto 30px;
+}
+
+h2 {
+    font-family: 'Oswald', "helvetica",  "arial", sans-serif;
+    font-size: 2.25em;
+    text-align: left;
+    font-weight: bold;
+    line-height: 1.3em;
+    color: rgb(66, 65, 53);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h3 {
+    font-family: 'Oswald', "helvetica",  "arial", sans-serif;
+    font-size: 1.875em;
+    text-align: center;
+    font-weight: bold;
+    line-height: 46px;
+    color: rgb(248, 213, 19);
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
+    margin: 40px auto 0;
+}
+
+a {
+    text-decoration: underline;
+    -webkit-transition: all 0.20s ease-in-out;
+    -moz-transition: all 0.20s ease-in-out;
+    -ms-transition: all 0.20s ease-in-out;
+    -o-transition: all 0.20s ease-in-out;
+    transition: all 0.20s ease-in-out;
+}
+
+header {
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    background: url("../images/wood_background.jpg") center -500px no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: auto;
+    background-size: auto;
+}
+
+    header > div {
+        max-width: 1000px;
+        height: auto;
+        margin: 0 auto;
+        padding: 80px 0px;
+    }
+
+        header > div > p {
+            font-size: 0.75em;
+            text-align: center;
+            font-weight: normal;
+            line-height: 1.5em;
+            color: rgb(242, 240, 218);
+            letter-spacing: 0.1em;
+        }
+
+        header > div > hr {
+            width: 50px;
+            height: 1px;
+            background-color: rgb(242, 240, 218);
+            border: 0;
+            margin: 30px auto 0;
+            padding: 0;
+        }
+
+#intro {
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+}
+
+    #intro > div {
+        max-width: 1000px;
+        height: auto;
+        margin: 0px auto;
+        padding: 80px 0px;
+    }
+
+        #intro-left {
+            float: left;
+            width: 46%;
+            height: auto;
+        }
+
+        #intro-right {
+            float: left;
+            width: 46%;
+            height: auto;
+            margin: 0 0 0 8%;
+        }
+
+            #intro-left > p,
+            #intro-right > p {
+                text-align: left;
+                line-height: 1.5em;
+                letter-spacing: 0.1em;
+                margin: 0px;
+            }
+
+            #intro-left a:hover,
+            #intro-right a:hover {background-color: rgb(248, 213, 19);}
+
+#graphic {
+    width: 100%;
+    height: auto;
+    background: url("../images/wood_background.jpg") center center no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: auto;
+    background-size: auto;
+    margin: 0px auto;
+}
+
+    #graphic > div {
+        max-width: 1000px;
+        height: auto;
+        margin: 0px auto;
+        padding: 80px 0px;
+    }
+
+        #wolfwithin {
+            width: 400px;
+            margin: 0px auto;
+        }
+
+#shirt {
+    height: auto;
+    width: 100%;
+    margin: 0px auto;
+}
+
+
+    #shirt > div {
+        max-width: 1000px;
+        height: auto;
+        margin: 0px auto;
+        padding: 80px 0px;
+    }
+
+        #shirt-left {
+            float: left;
+            width: 45%;
+            height: auto;
+            margin: 0;
+        }
+
+        #shirt-right {
+            float: left;
+            width: 49%;
+            height: auto;
+            margin: 30px 0 0 6%;
+        }
+
+            #shirt-right > hr {
+                width: 150px;
+                height: 5px;
+                background-color: rgb(248, 213, 19);
+                border: 0;
+                margin: 15px 0 0 0;
+                padding: 0;
+            }
+
+            #shirt-right > p {
+                font-size: 0.875em;
+                text-align: left;
+                line-height: 1.375em;
+                color: rgb(66, 65, 53);
+                letter-spacing: 0.1em;
+                margin: 30px 0px 0px;
+            }
+
+            #shirt-specs {
+                margin: 40px 0 0 0;
+                padding: 0;
+            }
+
+            #shirt-specs > li {
+                list-style: none;
+                font-family: 'Anonymous Pro', "courier new", "times new roman", serif;
+                font-size: 0.875em;
+                text-align: left;
+                line-height: 1.375em;
+                color: rgb(66, 65, 53);
+                letter-spacing: 0.1em;
+                position: relative;
+                margin: 0 0 20px 60px;
+            }
+
+                #shirt-specs > li:last-child {margin: 0 0 0 60px;}
+
+                #shirt-specs > li > a:hover {background-color: rgb(248, 213, 19);}
+
+#newsletter {
+    float: none;
+    height: auto;
+    margin: 0px auto;
+    clear: none;
+    width: auto;
+    max-width: 1000px;
+}
+
+    #newsletter > div {
+        float: none;
+        height: auto;
+        margin: 60px auto 80px;
+        clear: none;
+        width: auto;
+        max-width: 1000px;
+    }
+
+        #newsletter-left {
+            float: left;
+            height: auto;
+            clear: none;
+            width: 45%;
+            margin: 20px 0 0 0;
+        }
+
+            #newsletter-left > hr {
+                width: 150px;
+                height: 5px;
+                background-color: rgb(248, 213, 19);
+                border: 0;
+                margin: 15px 0 0 0;
+                padding: 0;
+            }
+
+            #newsletter-left > p {
+                font-size: 0.875em;
+                text-align: left;
+                line-height: 1.375em;
+                color: rgb(66, 65, 53);
+                letter-spacing: 0.1em;
+                margin: 30px 0 0 0;
+            }
+
+                #newsletter-left > p > a:hover {background-color: rgb(248, 213, 19);}
+
+                .button {
+                    float: left;
+                    font-family: 'Anonymous Pro', "courier new", "times new roman", serif;
+                    font-size: 1em;
+                    font-weight: bold;
+                    text-align: center;
+                    letter-spacing: 0.03em;
+                    text-decoration: none;
+                    color: rgb(66, 65, 53);
+                    background-color: rgb(248, 213, 19);
+                    border: solid 3px rgb(248, 213, 19);
+                    margin: 20px 0 0 0;
+                    padding: 12px 37px;
+                }
+
+                .button:hover {
+                    color: rgb(66, 65, 63);
+                    background-color: rgba(248, 213, 19, 0);
+                }
+
+        #newsletter-right {
+            float: left;
+            width: 49%;
+            height: auto;
+            margin: 0 0 0 6%;
+        }
+
+footer {
+    width: 100%;
+    height: auto;
+    background: url("../images/wood_background.jpg") center bottom no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: auto;
+    background-size: auto;
+    margin: 0px auto;
+}
+
+    footer > div {
+        max-width: 1000px;
+        height: auto;
+        margin: 0 auto;
+        padding: 80px 0px;
+    }
+
+        #hyams-logo {
+            width: 30px;
+            margin: 0 auto;
+        }
+
+        footer > div > hr {
+            background-color: rgb(242, 240, 218);
+            border: 0;
+            height: 1px;
+            width: 50px;
+            margin: 30px auto 0;
+            padding: 0;
+        }
+
+        #social {
+            font-size: 1.875em;
+            text-align: center;
+            font-weight: normal;
+            line-height: 1em;
+            color: rgb(254, 249, 218);
+            width: 100%;
+            height: auto;
+            margin: 50px 0 0 0;
+            padding: 0;
+        }
+
+            #social li {
+                display: inline;
+                margin: 0 60px 0 0;
+                padding: 0;
+            }
+
+            #social li:last-child {margin: 0;}
+
+            #social li a {text-decoration: none;}
+
+            #social li a:hover {color: rgb(248, 213, 19);}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1050px) {
+    header > div {
+        width: 90%;
+        max-width: none;
+    }
+    
+    #intro > div {
+        width: 90%;
+        max-width: none;
+    }
+    
+    #graphic > div {
+        width: 90%;
+        max-width: none;
+    }
+
+    #shirt > div {
+        width: 90%;
+        max-width: none;
+    }
+
+    #newsletter > div {
+        width: 90%;
+        max-width: none;
+    }
+    
+        #newsletter-right {margin: 100px 0 0 6%;}
+    
+    footer > div {
+        width: 90%;
+        max-width: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    header {background-attachment: scroll;}
+    
+	    header > div {width: 85%;}
+    
+    #intro > div {
+        width: 75%;
+        padding: 60px 0px;
+    }
+
+        #intro-left {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            float: none;
+        }
+
+        #intro-right {
+            width: 100%;
+            margin: 30px auto 0;
+            float: none;
+        }
+
+	#graphic {background-attachment: scroll;}
+    
+	    #graphic > div {
+	        padding: 60px 0px;
+	        width: 85%;
+	    }
+    
+    #shirt > div {
+        width: 75%;
+        padding: 60px 0px;
+    }
+
+        #shirt-left {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            float: none;
+        }
+
+        #shirt-right {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            float: none;
+            margin-top: 40px;
+        }
+
+        #shirt-specs {margin-top: 30px;}
+
+    #newsletter > div {
+        width: 75%;
+        margin: 0px auto 60px;
+    }
+
+        #newsletter-left {
+            width: 100%;
+            margin: 0 auto;
+            float: none;
+        }
+
+        #newsletter-right {
+            width: 100%;
+            float: none;
+            margin: 60px auto 0;
+        }
+
+    footer {background-attachment: scroll;}
+    
+	    footer > div {width: 85%;}
+}
+
+@media only screen and (max-width: 520px) {
+    header > div {
+        width: 90%;
+        padding: 60px 0px;
+    }
+
+    #intro > div {
+        width: 85%;
+        padding: 50px 0px;
+    }
+
+    #graphic > div {
+        width: 85%;
+        padding: 50px 0px;
+    }
+
+    #shirt > div {width: 85%;}
+
+    #newsletter > div {
+        width: 85%;
+        margin-bottom: 50px;
+    }
+
+    #newsletter-right {margin: 30px 0 0 0;}
+    
+        .email {height: 40px;}
+        
+        .button {
+            width: 100%;
+            padding: 20px 0;
+        }
+
+    footer > div {
+        width: 85%;
+        padding: 60px 0px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    h1 {margin: 30px auto}
+    
+    h3 {
+        font-size: 1.475em;
+        line-height: 1.475em;
+    }
+    
+    header > div {
+        padding: 40px 0px;
+        width: 65%;
+    }
+    
+    #intro-right {
+        margin: 20px auto 0;
+    }
+
+    #shirt > div {padding: 50px 0px;}
+    
+    #social li {margin: 0 40px 0 0;}
+}
+
