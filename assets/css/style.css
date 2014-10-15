@@ -122,6 +122,13 @@ Copyright (c) 2014 Daniel Eden
     outline: none;
 }
 
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
 body {
     font-family: 'Anonymous Pro', "courier new", "times new roman", serif;
     font-size: 1em;
