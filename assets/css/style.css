@@ -554,8 +554,8 @@ footer {
 
         #newsletter-left {
             width: 100%;
-            margin: 0 auto;
             float: none;
+            margin: 0 auto;
         }
 
         #newsletter-right {
@@ -592,7 +592,7 @@ footer {
         margin-bottom: 50px;
     }
 
-    #newsletter-right {margin: 30px 0 0 0;}
+    #newsletter-right {margin: 30px auto 0;}
     
         .email {height: 40px;}
         
