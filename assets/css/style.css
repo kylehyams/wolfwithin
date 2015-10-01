@@ -196,6 +196,8 @@ a {
     transition: all 0.20s ease-in-out;
 }
 
+strong {font-weight: 700;}
+
 header {
     height: auto;
     margin: 0 auto;
@@ -428,12 +430,6 @@ header {
             height: auto;
             margin: 0 0 0 6%;
         }
-        
-        	.thank-you {
-	        	width: 50px;
-	        	height: auto;
-        	}
-        
 
 footer {
     width: 100%;
