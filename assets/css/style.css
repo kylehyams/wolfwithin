@@ -429,6 +429,11 @@ header {
             margin: 0 0 0 6%;
         }
         
+        	.thank-you {
+	        	width: 50px;
+	        	height: auto;
+        	}
+        
 
 footer {
     width: 100%;
