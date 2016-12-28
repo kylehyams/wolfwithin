@@ -430,6 +430,23 @@ header {
             height: auto;
             margin: 0 0 0 6%;
         }
+        
+        	.embed-container {
+	        	position: relative;
+	        	padding-bottom: 120%;
+	        	height: 0;
+	        	overflow: hidden;
+	        }
+        	
+        	.embed-container iframe,
+        	.embed-container object,
+        	.embed-container embed {
+	        	position: absolute;
+	        	top: 0;
+	        	left: 0;
+	        	width: 100%;
+	        	height: 100%;
+	        }
 
 footer {
     width: 100%;
@@ -565,6 +582,10 @@ footer {
             float: none;
             margin: 60px auto 0;
         }
+        
+        	.embed-container {
+	        	padding-bottom: 125%;
+	        }
 
     footer {background-attachment: scroll;}
     
